@@ -1,0 +1,728 @@
+body {
+    background-color: rgb(17, 203, 240);
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container nav h2 {
+    flex: 1;
+    color: #182091;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 0px;
+    font-style: italic;
+}
+
+.container nav a {
+    text-decoration: none;
+    flex: 3;
+    float: right;
+    color: white;
+    font-weight: 150;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: flex-end;
+    /* Positionne les boutons à droite */
+    height: 20px;
+    padding-top: 10px;
+}
+
+.nav-buttons button {
+    margin-left: 10px;
+    /* Ajoute un espace de 10px entre chaque bouton */
+    box-shadow: 3px 3px 3px #182091;
+    background-color: midnightblue;
+    border-radius: 5px;
+}
+
+
+.hi {
+    display: flex;
+}
+
+.col1 {
+    flex: 2;
+}
+
+.col2 {
+    flex: 1;
+}
+
+.hi {
+    margin-top: 50px;
+}
+
+.col2 img {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    /* Pour rendre l'image ronde */
+}
+
+.col2 {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 20%;
+    /* Pour rendre l'image ronde */
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    /* Ajoute une transition sur la transformation et l'ombre */
+}
+
+#round-image {
+    width: 200px;
+    /* Ajustez la taille selon vos besoins */
+    cursor: pointer;
+    /* Change le curseur en main au survol */
+}
+
+.col2:hover {
+    transform: translateX(70px);
+    /* Translation de l'image */
+    box-shadow: 5px 5px 10px rgba(10, 4, 52, 0.5);
+    /* Ajoute une ombre */
+}
+
+.col1 h1 {
+    font-style: italic;
+    color: wheat;
+}
+
+.col1 p {
+    justify-content: center;
+    font-size: medium;
+    font-style: oblique;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+}
+
+.col1 button {
+    background-color: #062e58;
+    /* Couleur de fond du bouton */
+    color: #fff;
+    /* Couleur du texte */
+    border: none;
+    /* Supprimer la bordure */
+    padding: 10px 20px;
+    /* Espacement intérieur */
+    font-size: 16px;
+    /* Taille de la police */
+    border-radius: 5px;
+    /* Coins arrondis */
+    cursor: pointer;
+    /* Curseur en forme de main */
+    transition: background-color 0.3s ease;
+    margin-left: 400px;
+}
+
+.col1 button:hover {
+    background-color: #0056b3;
+    /* Couleur de fond du bouton au survol */
+}
+
+.About {
+    margin-top: 150px;
+}
+
+.About h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(4, 4, 4);
+}
+
+.dropdown {
+    display: flex;
+    gap: 10px;
+    margin: 200px;
+    margin-top: 70px;
+}
+
+.dropdown .experience,
+.dropdown .education,
+.dropdown .certificates,
+.dropdown .langagues,
+.dropdown .attributes,
+.dropdown .Interests {
+    position: relative;
+
+}
+
+.dropdown button {
+    display: inline-block;
+    /* Affiche les boutons en ligne */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 1px;
+    margin-left: 10px;
+    margin: 10px;
+}
+
+.dropdown ul {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color: #03010a;
+    min-width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.dropdown .experience:hover ul,
+.dropdown .education:hover ul,
+.dropdown .certificates:hover ul,
+.dropdown .langagues:hover ul,
+.dropdown .attributes:hover ul,
+.dropdown .Interests:hover ul {
+    display: block;
+}
+
+.dropdown ul li {
+    list-style: none;
+    margin: 5px 0;
+    color: white;
+}
+
+.dropdown ul li::before {
+    content: "•";
+    margin-right: 5px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* Commencez à aligner les éléments à partir du début de la ligne */
+    /*margin-top: 80px;*/
+}
+
+.Projects h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+
+.projet1 {
+    width: 300px;
+    height: 400px;
+
+    flex: 1;
+    margin-left: 10px;
+    margin-top: 100px;
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Ajoute une transition sur la transformation et l'ombre */
+    cursor: pointer;
+}
+
+.projet2 {
+    width: 300px;
+    height: 400px;
+
+    flex: 1;
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-top: 130px;
+    /* Marge en haut */
+    margin-bottom: 0px;
+    margin-left: 25px;
+}
+
+.projet3 {
+    width: 300px;
+    height: 400px;
+
+    flex: 1;
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-top: 100px;
+    /* Marge en haut */
+    margin-left: 25px;
+}
+
+.projet4 {
+    width: 300px;
+    height: 400px;
+
+    flex: 1;
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-top: -800px;
+    /* Marge en haut */
+    margin-left: 995px;
+    margin-bottom: 18px;
+}
+
+.projet5 {
+    width: 300px;
+    height: 400px;
+
+    flex: 1;
+    margin-left: 170px;
+    margin-top: -1px;
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.projet6 {
+    width: 300px;
+    height: 400px;
+
+    flex: 1;
+    margin-left: 500px;
+    margin-top: -400px;
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 25px;
+    margin-top: -500;
+}
+
+.projet7 {
+    width: 300px;
+    height: 400px;
+
+    flex: 1;
+    margin-left: 830px;
+    margin-top: -400px;
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 45px;
+    margin-top: -500px;
+}
+
+.Projects .projet1:hover {
+    transform: translateX(50px);
+    /* Translation de l'image */
+    box-shadow: 5px 5px 10px rgba(10, 4, 52, 0.5);
+    /* Ajoute une ombre */
+}
+
+.Projects .projet2:hover {
+    transform: translateX(50px);
+    /* Translation de l'image */
+    box-shadow: 5px 5px 10px rgba(10, 4, 52, 0.5);
+    /* Ajoute une ombre */
+}
+
+.Projects .projet3:hover {
+    transform: translateX(50px);
+    /* Translation de l'image */
+    box-shadow: 5px 5px 10px rgba(10, 4, 52, 0.5);
+    /* Ajoute une ombre */
+}
+
+.Projects .projet4:hover {
+    transform: translateX(50px);
+    /* Translation de l'image */
+    box-shadow: 5px 5px 10px rgba(10, 4, 52, 0.5);
+    /* Ajoute une ombre */
+}
+
+.Projects .projet5:hover {
+    transform: translateX(50px);
+    /* Translation de l'image */
+    box-shadow: 5px 5px 10px rgba(10, 4, 52, 0.5);
+    /* Ajoute une ombre */
+}
+
+.Projects .projet6:hover {
+    transform: translateX(50px);
+    /* Translation de l'image */
+    box-shadow: 5px 5px 10px rgba(10, 4, 52, 0.5);
+    /* Ajoute une ombre */
+}
+
+.Projects .projet7:hover {
+    transform: translateX(50px);
+    /* Translation de l'image */
+    box-shadow: 5px 5px 10px rgba(10, 4, 52, 0.5);
+    /* Ajoute une ombre */
+}
+
+.projet1,
+.projet2,
+.projet3,
+.projet4,
+.projet5,
+.projet6,
+.projet7 p {
+    justify-content: center;
+    color: #0a0909;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.projet1,
+.projet2,
+.projet3,
+.projet4,
+.projet5,
+.projet6,
+.projet7 {
+    background-color: #062e58;
+}
+
+.custom-icon {
+    color: rgb(4, 4, 137);
+    /* Change color as per your preference */
+    font-size: 24px;
+    /* Change size as per your preference */
+    transition: transform 0.3s ease;
+    /* Transition property for smooth translation */
+}
+
+/* Style for the icon on hover */
+.custom-icon:hover {
+    transform: translateY(-5px);
+    /* Translate vertically by -5px on hover */
+}
+
+.projet1 .fa-github {
+    color: rgb(16, 16, 16);
+    /* Couleur de l'icône */
+    font-size: 24px;
+    /* Taille de l'icône */
+    margin-bottom: 0px;
+    margin-top: 40px;
+    box-shadow: 10px 10px 10px rgba(14, 15, 0, 0.2);
+
+}
+
+.projet2 .fa-github {
+    color: rgb(16, 16, 16);
+    /* Couleur de l'icône */
+    font-size: 24px;
+    /* Taille de l'icône */
+    margin-bottom: 0px;
+    margin-top: 40px;
+    box-shadow: 10px 10px 10px rgba(14, 15, 0, 0.2);
+
+}
+
+.projet3 .fa-github {
+    color: rgb(16, 16, 16);
+    /* Couleur de l'icône */
+    font-size: 24px;
+    /* Taille de l'icône */
+    margin-bottom: 0px;
+    margin-top: 30px;
+    box-shadow: 10px 10px 10px rgba(14, 15, 0, 0.2);
+
+}
+
+.projet4 .fa-github {
+    color: rgb(16, 16, 16);
+    /* Couleur de l'icône */
+    font-size: 24px;
+    /* Taille de l'icône */
+    margin-bottom: 10px;
+    margin-top: 0px;
+    box-shadow: 10px 10px 10px rgba(14, 15, 0, 0.2);
+
+}
+
+.projet5 .fa-github {
+    color: rgb(16, 16, 16);
+    /* Couleur de l'icône */
+    font-size: 24px;
+    /* Taille de l'icône */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: 10px 10px 10px rgba(14, 15, 0, 0.2);
+
+}
+
+.projet6 .fa-github {
+    color: rgb(16, 16, 16);
+    /* Couleur de l'icône */
+    font-size: 24px;
+    /* Taille de l'icône */
+    margin-bottom: 10px;
+    margin-top: 19px;
+    box-shadow: 10px 10px 10px rgba(14, 15, 0, 0.2);
+
+}
+
+.projet7 .fa-github {
+    color: rgb(16, 16, 16);
+    /* Couleur de l'icône */
+    font-size: 24px;
+    /* Taille de l'icône */
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-left: 130px;
+    box-shadow: 10px 10px 10px rgba(14, 15, 0, 0.2);
+
+}
+
+.projet2 h2 {
+    font-size: 15px;
+    padding-bottom: 0px;
+}
+
+.projet4 h2 {
+    font-size: 15px;
+    padding-bottom: 0px;
+}
+
+.projet6 h2 {
+    font-size: 15px;
+    padding-bottom: 0px;
+}
+
+.fas fa-graduation-cap custom-icon {
+    color: blue;
+    /* Change color as per your preference */
+    font-size: 24px;
+    /* Change size as per your preference */
+    /* Add more styles as needed */
+    margin-right: 100px;
+}
+
+.Projects h1 {
+    box-shadow: 10px 10px 10px rgba(51, 48, 125, 0.2);
+    ;
+}
+
+.skills {
+    display: flex;
+    margin-top: 50px;
+}
+
+.skills h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 0px;
+    text-decoration: underline;
+
+}
+
+.skill1 {
+    margin-top: 60px;
+    flex: 1;
+}
+
+.skill2 {
+    flex: 1;
+    margin-top: 70px;
+}
+
+.skill3 {
+    flex: 1;
+    margin-top: 70px;
+}
+
+.skill1,
+.skill2,
+.skill3 li {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.skill1 ul li:hover {
+    color: #182091;
+
+}
+
+.skill2 ul li:hover {
+    color: #182091;
+
+}
+
+.skill3 ul li:hover {
+    color: #182091;
+
+}
+
+.skills span {
+    color: #182091;
+}
+
+.Projects span {
+    color: #062e58;
+}
+
+.skilles li:hover {
+    color: #007bff;
+}
+
+.form {
+    color: #98a7c5;
+}
+
+.form input {
+    color: rgb(8, 2, 31);
+    background-color: #062e58;
+    border-radius: 10px;
+}
+
+.form textarea {
+    background-color: #062e58;
+    border-radius: 10px;
+}
+
+.Contact {
+    display: flex;
+}
+
+.txt {
+    flex: 2;
+    max-width: 70%;
+}
+
+.form {
+    flex: 1;
+    margin-right: 10px;
+    width: 20px;
+    background-color: #010810;
+    text-align: center;
+    box-shadow: 5px 5px 10px 10px #010124;
+}
+
+.txt span {
+    color: #062e58;
+    margin-top: 20px;
+}
+
+.txt h1 {
+    color: #000000;
+    margin-left: 0px;
+}
+
+.txt p {
+    color: #000000;
+}
+
+.email {
+    color: blue;
+    /* Couleur du texte */
+    font-size: 16px;
+    /* Taille de la police */
+    font-weight: bold;
+    /* Poids de la police */
+    text-decoration: none;
+    /* Supprimer le soulignement par défaut */
+}
+
+.email:hover {
+    text-decoration: underline;
+    /* Souligner le texte au survol */
+}
+
+.btn1,
+.btn2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-right: 350px;
+
+    /* Espacement entre les boutons */
+    text-align: center;
+}
+
+.btn1 {
+    margin-left: 370px;
+    margin-top: 0px;
+}
+
+.btn2 {
+    margin-left: 300px;
+}
+
+/* Style pour l'icône */
+
+/* Effet de survol */
+.btn1:hover {
+    background-color: #01070f;
+}
+
+.btn2:hover {
+    background-color: #021325;
+}
+
+.submit:hover {
+    background-color: #010124;
+}
+
+input[type="submit"] {
+    color: rgb(0, 0, 0);
+}
+
+.About span {
+    color: #030365;
+}
+/* Styles pour les smartphones */
+@media only screen and (max-width: 600px) {
+    .nav-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-buttons button {
+        margin-bottom: 10px;
+    }
+    
+    .col1, .col2 {
+        flex: 1 100%;
+    }
+    
+    .col1 button {
+        margin-left: 20px; /* Ajuster selon la marge souhaitée */
+    }
+
+    .Projects .projet1, .Projects .projet2, .Projects .projet3,
+    .Projects .projet4, .Projects .projet5, .Projects .projet6, .Projects .projet7 {
+        width: 100%; /* Les projets prennent toute la largeur */
+        margin-left: 0; /* Ajustement de la marge */
+    }
+}
+
+/* Styles pour les tablettes */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .nav-buttons {
+        justify-content: space-around;
+    }
+    
+    .col1, .col2 {
+        flex: 1 50%; /* Chaque colonne prend la moitié de la largeur */
+    }
+    
+    .col1 button {
+        margin-left: 100px; /* Ajuster selon la marge souhaitée */
+    }
+
+    .Projects .projet1, .Projects .projet2, .Projects .projet3,
+    .Projects .projet4, .Projects .projet5, .Projects .projet6, .Projects .projet7 {
+        width: 50%; /* Les projets prennent la moitié de la largeur */
+    }
+}
